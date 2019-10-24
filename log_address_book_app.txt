@@ -1,0 +1,3 @@
+Address Book App Log
+2019/10/24 02 - Completed creating App's Main Window.
+2019/10/24 01 - Started the Address Book App project.
