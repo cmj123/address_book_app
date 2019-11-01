@@ -1,4 +1,5 @@
 Address Book App Log
+2019/10/24 05 - Completed GUI for my People window.
 2019/10/24 04 - Completed database initialization.
 2019/10/24 03 - Completed creating Main Window Buttons.
 2019/10/24 02 - Completed creating App's Main Window.
