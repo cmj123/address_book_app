@@ -1,4 +1,6 @@
 Address Book App Log
+2019/11/05 18 - 100% - completed Deleting Person from Database
+2019/11/05 17 - 000% - started Deleting Person from Database
 2019/11/05 16 - 100% - completed Display Person Window
 2019/11/05 15 - 000% - started Display Person Window
 2019/11/05 14 - 100% - completed update person - GUI development

@@ -57,7 +57,7 @@ class MyPeople(Toplevel):
         btndisplay = Button(self.bottomFrame, text='Display', width=12, font='Sans 12 bold', command=self.funcDisplayPerson)
         btndisplay.grid(row=0, column=2, sticky=N, padx=10, pady=90)
 
-        btndelete = Button(self.bottomFrame, text='Delete', width=12, font='Sans 12 bold')
+        btndelete = Button(self.bottomFrame, text='Delete', width=12, font='Sans 12 bold',command=self.funcDeletePerson)
         btndelete.grid(row=0, column=2, sticky=N, padx=10, pady=130)
 
     def funcaddPeople(self):
@@ -77,6 +77,22 @@ class MyPeople(Toplevel):
         person = self.listBox.get(selected_item)
         person_id = person.split("-")[0]
         displaypage = Display()
+
+    def funcDeletePerson(self):
+        selected_item = self.listBox.curselection()
+        person = self.listBox.get(selected_item)
+        person_id = person.split("-")[0]
+
+        mbox = messagebox.askquestion("Warning", "Are you sure to delete this person?", icon='warning')
+
+        if mbox == 'yes':
+            try:
+                cur.execute("DELETE FROM persons WHERE person_id=?", (person_id,))
+                con.commit()
+                messagebox.showinfo("Success", "Person has been deleted")
+                self.destroy()
+            except:
+                messagebox.showinfo("Info", "Person has not been deleted!")
 
 
 class Update(Toplevel):
