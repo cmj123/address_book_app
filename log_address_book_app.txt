@@ -1,4 +1,6 @@
 Address Book App Log
+2019/11/05 09 - 100% - completed displaying people
+2019/11/05 09 - 000% - started displaying people
 2019/11/05 08 - 100% - completed Adding People to Database.
 2019/11/05 07 - 000% - started Adding People to Database.
 2019/11/05 06 - 100% - Completed GUI for Add Person window.

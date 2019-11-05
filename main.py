@@ -1,6 +1,7 @@
 from tkinter import *
 import datetime
 import mypeople
+import addpeople
 
 date = datetime.datetime.now().date()
 
@@ -34,7 +35,7 @@ class Application(object):
 
         # Second Button
         self.btn2Icon = PhotoImage(file='./icons/add.png')
-        self.personBtn = Button(self.bottom, text='   Add People  ', font='arial 12 bold')
+        self.personBtn = Button(self.bottom, text='   Add People  ', font='arial 12 bold', command=self.funcaddPeople)
         self.personBtn.config(image=self.btn2Icon, compound=LEFT)
         self.personBtn.place(x=250, y=70)
 
@@ -46,6 +47,9 @@ class Application(object):
 
     def openMyPeople(self):
         people = mypeople.MyPeople()
+
+    def funcaddPeople(self):
+        addpage = addpeople.AddPeople()
 
 
 def main():
