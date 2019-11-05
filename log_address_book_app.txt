@@ -1,7 +1,9 @@
 Address Book App Log
-2019/11/05 06 - Completed GUI for Add Person window.
-2019/10/24 05 - Completed GUI for my People window.
-2019/10/24 04 - Completed database initialization.
-2019/10/24 03 - Completed creating Main Window Buttons.
-2019/10/24 02 - Completed creating App's Main Window.
-2019/10/24 01 - Started the Address Book App project.
+2019/11/05 08 - 100% - completed Adding People to Database.
+2019/11/05 07 - 000% - started Adding People to Database.
+2019/11/05 06 - 100% - Completed GUI for Add Person window.
+2019/10/24 05 - 100% - Completed GUI for my People window.
+2019/10/24 04 - 100% - Completed database initialization.
+2019/10/24 03 - 100% - Completed creating Main Window Buttons.
+2019/10/24 02 - 100% - Completed creating App's Main Window.
+2019/10/24 01 - 000% - Started the Address Book App project.
