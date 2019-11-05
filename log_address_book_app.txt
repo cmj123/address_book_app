@@ -1,4 +1,6 @@
 Address Book App Log
+2019/11/05 14 - 100% - completed update person - GUI development
+2019/11/05 13 - 000% - started update person - GUI development
 2019/11/05 12 - 100% - completed update person - db management
 2019/11/05 11 - 000% - started update person - db management
 2019/11/05 10 - 100% - completed displaying people
