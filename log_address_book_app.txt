@@ -1,4 +1,6 @@
 Address Book App Log
+2019/11/05 20 - 100% - completed creating About us Window and Finishing the project
+2019/11/05 19 - 000% - started creating About us Window and Finishing the project
 2019/11/05 18 - 100% - completed Deleting Person from Database
 2019/11/05 17 - 000% - started Deleting Person from Database
 2019/11/05 16 - 100% - completed Display Person Window
