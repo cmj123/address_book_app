@@ -50,7 +50,8 @@ class MyPeople(Toplevel):
         btnadd = Button(self.bottomFrame, text='Add', width=12, font='Sans 12 bold', command=self.funcaddPeople)
         btnadd.grid(row=0, column=2, sticky=N, padx=10, pady=10)
 
-        btnupdate = Button(self.bottomFrame, text='Update', width=12, font='Sans 12 bold')
+        btnupdate = Button(self.bottomFrame, text='Update', width=12, font='Sans 12 bold',
+                            command=self.funcUpdatePerson)
         btnupdate.grid(row=0, column=2, sticky=N, padx=10, pady=50)
 
         btndisplay = Button(self.bottomFrame, text='Display', width=12, font='Sans 12 bold')
@@ -62,3 +63,35 @@ class MyPeople(Toplevel):
     def funcaddPeople(self):
         addpage = addpeople.AddPeople()
         self.destroy()
+
+    def funcUpdatePerson(self):
+        global person_id
+        selected_item = self.listBox.curselection()
+        person = self.listBox.get(selected_item)
+        person_id = person.split("-")[0]
+        updatepage = Update()
+
+class Update(Toplevel):
+    def __init__(self):
+        Toplevel.__init__(self)
+        self.geometry("650x750+550+200")
+        self.title("Update Person")
+        self.resizable(False, False)
+
+        # get person from database
+        global person_id
+
+        person=cur.execute("SELECT * FROM persons WHERE person_id = ?",(person_id,))
+        person_info = person.fetchall()
+        self.person_id = person_info[0][0]
+        self.person_name = person_info[0][1]
+        self.person_surname = person_info[0][2]
+        self.person_email = person_info[0][3]
+        self.person_phone = person_info[0][4]
+        self.person_address = person_info[0][5]
+        print(self.person_id, '\n',
+                self.person_name, '\n',
+                self.person_surname, '\n',
+                self.person_email, '\n',
+                self.person_phone, '\n', 
+                self.person_address)
